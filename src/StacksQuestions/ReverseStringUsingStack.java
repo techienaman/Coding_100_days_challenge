@@ -14,8 +14,7 @@ public class ReverseStringUsingStack {
         for(int i=0;i<str.length();i++){
             st.push(str.charAt(i));
         }
-        int stack_size=st.size();
-        for(int j=0;j<stack_size;j++){
+        while(!st.empty()){
             reversedString=reversedString+st.pop();
         }
         return reversedString;
